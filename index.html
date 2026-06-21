@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bussler Barbearia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col font-sans antialiased">
+
+  <div class="relative z-10 min-h-screen flex flex-col flex-1">
+
+    <!-- Área clara -->
+    <header class="bg-[#f8f9fc] h-[calc(35vh-3rem)] text-center flex flex-col flex-shrink-0">
+      <div class="pt-12 pb-12">
+        <h1 class="text-4xl font-light text-black mt-2">Bussler Barbearia</h1>
+        <p class="text-lg font-light text-gray-800 mt-0">Qualidade e Atendimento</p>
+      </div>
+      <div class="flex-1 min-h-8"></div>
+    </header>
+
+    <!-- Área escura -->
+    <main class="flex-1 bg-[#1a1a1a] relative flex flex-col">
+
+      <!-- Logo ancorada no topo da área escura (centro na divisão) -->
+      <img
+        src="img/logo.png"
+        alt="Bussler Barbearia"
+        class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-44 h-44 rounded-full shadow-lg object-cover bg-white"
+      >
+
+      <div class="flex flex-col gap-4 w-full max-w-xs mx-auto px-4 pt-[max(7.75rem,calc(35vh-11.5rem))]">
+
+        <a href="https://wa.me/555599290366?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20um%20hor%C3%A1rio!" target="_blank" class="relative flex items-center bg-white text-black rounded-full py-3 px-2 w-full no-underline">
+          <img src="icon/whats.png" alt="" class="w-8 h-8 object-contain ml-2 flex-shrink-0">
+          <span class="absolute inset-0 flex items-center justify-center font-light uppercase tracking-[0.2em] text-[15px] pointer-events-none">
+            WHATSAPP
+          </span>
+        </a>
+
+        <a href="https://barberpro.grupoagsistemas.com.br/agendar/bussler" target="_blank" class="relative flex items-center bg-white text-black rounded-full py-3 px-2 w-full no-underline">
+          <img src="icon/site.png" alt="" class="w-8 h-8 object-contain ml-2 flex-shrink-0">
+          <span class="absolute inset-0 flex items-center justify-center font-light uppercase tracking-[0.2em] text-[15px] pointer-events-none">
+            AGENDE AQUI
+          </span>
+        </a>
+
+        <a href="https://maps.google.com/?cid=1446380002558965085&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="relative flex items-center bg-white text-black rounded-full py-3 px-2 w-full no-underline">
+          <img src="icon/local.png" alt="" class="w-8 h-8 object-contain ml-2 flex-shrink-0">
+          <span class="absolute inset-0 flex items-center justify-center font-light uppercase tracking-[0.2em] text-[15px] pointer-events-none">
+            LOCALIZAÇÃO
+          </span>
+        </a>
+
+      </div>
+
+      <div class="mt-auto pb-8 text-center px-4">
+        <p class="text-white font-light text-sm mb-4">
+          Clique nos botões para interagir.
+        </p>
+        <a
+          href="https://grupoagsistemas.com.br"
+          target="_blank"
+          class="block text-xs text-gray-500 hover:text-white transition-colors mt-4 text-center font-light cursor-pointer"
+        >
+          grupoagsistemas.com.br
+        </a>
+        <p class="text-xs text-gray-500 font-light text-center">
+          © 2026 Grupo AG. Todos os direitos reservados.
+        </p>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
